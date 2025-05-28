@@ -12,10 +12,6 @@
     box-sizing: border-box;
 }
 
-title {
-    color: #ca7842;
-}
-
 body {
     font-family: "Segoe UI", sans-serif;
     line-height: 1.6;
@@ -24,7 +20,10 @@ body {
     padding: 0 1rem;
 }
 
-h1,
+h1 {
+    color: #ca7842;
+}
+
 h2,
 h3,
 h4 {
@@ -72,6 +71,36 @@ header.hero {
     color: #4b352a;
 }
 
+/* ===== About Me Section ===== */
+.about-me {
+    text-align: center;
+}
+
+.about-me h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ca7842;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
 /* ===== Features Grid ===== */
 .features h2 {
     text-align: center;
@@ -105,9 +134,13 @@ header.hero {
     padding: 3rem 1rem;
 }
 
+.social-links {
+    margin-top: 1rem;
+}
+
 .social-links .btn {
     margin: 0.5rem;
-    padding: 0.75rem 1.25rem;
+    padding:0.75rem 1.25rem;
     background-color: #4b352a;
     color: white;
     text-decoration: none;
@@ -133,6 +166,94 @@ header.hero {
 .faq-item h4 {
     color: #ca7842;
     margin-bottom: 0.5rem;
+}
+
+/* ===== Tech Stack Section ===== */
+.tech-stack h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.tech-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 3px solid #ca7842;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    color: #4b352a;
+}
+
+/* ===== Projects Section ===== */
+.projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card h3 {
+    padding: 1.25rem 1.25rem 0.5rem;
+    color: #ca7842;
+}
+
+.project-card p {
+    padding: 0 1.25rem 1rem;
+    flex-grow: 1;
+}
+
+.project-links {
+    display: flex;
+    padding: 1rem 1.25rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+}
+
+.project-links a {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 0.75rem;
+}
+
+.project-links .github {
+    background-color: #4b352a;
+    color: white;
+}
+
+.project-links .github:hover {
+    background-color: #3a2921;
+}
+
+.project-links .live {
+    background-color: #ca7842;
+    color: white;
+}
+
+.project-links .live:hover {
+    background-color: #b5683a;
 }
 
 /* ===== Quick Links ===== */
@@ -171,6 +292,14 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .about-content {
+        padding: 1.5rem;
+    }
+    
+    .about-content p {
+        font-size: 1rem;
+    }
+    
     .hero h1 {
         font-size: 2rem;
     }
@@ -182,7 +311,22 @@ footer {
         margin: 0.5rem auto;
     }
 
-    .feature-grid {
+    .feature-grid,
+    .project-grid {
         grid-template-columns: 1fr;
+    }
+
+    .tech-grid {
+        justify-content: center;
+    }
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-links a {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+        text-align: center;
     }
 }

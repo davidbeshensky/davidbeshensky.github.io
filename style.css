@@ -26,6 +26,7 @@ body {
     background-color: #faedcd;
     color: #4b352a;
     padding: 0 1rem;
+    text-wrap: balance;
 }
 
 h1,

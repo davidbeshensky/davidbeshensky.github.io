@@ -2,7 +2,7 @@
    Dark Brown:    #4B352A
    Rust Orange:   #CA7842
    Sage Green:    #B2CD9C
-   Pale Yellow:   #F0F2BD
+   Pale Yellow:   #faedcd
 */
 
 /* ===== Reset and Base Styles ===== */
@@ -21,9 +21,9 @@ body {
 }
 
 body {
-    font-family: "Noto Serif", serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.6;
-    background-color: #f0f2bd;
+    background-color: #faedcd;
     color: #4b352a;
     padding: 0 1rem;
 }
@@ -47,9 +47,11 @@ section {
 /* ===== Hero Section ===== */
 header.hero {
     background-color: #4b352a;
-    color: #f0f2bd;
+    color: #faedcd;
     text-align: center;
     padding: 4rem 1rem 3rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .hero h1 {
@@ -328,9 +330,11 @@ header.hero {
 /* ===== Footer ===== */
 footer {
     background-color: #4b352a;
-    color: #f0f2bd;
+    color: #faedcd;
     padding: 3rem 1rem 1rem;
     margin-top: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .footer-content {
@@ -363,7 +367,7 @@ footer {
 
 .footer-links a,
 .footer-info a {
-    color: #f0f2bd;
+    color: #faedcd;
     text-decoration: none;
     transition: color 0.2s ease;
 }
